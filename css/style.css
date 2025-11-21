@@ -1,0 +1,324 @@
+/* 基本設定 */
+body {
+    font-family: 'Yu Gothic', '游ゴシック', 'Hiragino Kaku Gothic ProN', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+    padding-top: 80px;
+}
+
+
+/* ヘッダー */
+.page-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.header_wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header_logo h1 {
+    margin: 0;
+}
+.header_logo img{
+    width: 25%;
+
+}
+
+.header_logo a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.header_nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_nav li {
+    margin-left: 30px;
+}
+
+.header_nav a {
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header_nav a:hover {
+    color: #ff9900;
+}
+
+/* メインビジュアル */
+.mainvisual {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mainvisual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* メインコンテンツ */
+.main_contents {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main_contents section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #ff9900;
+    text-align: center;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* ニュースセクション */
+.news_section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news_section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news_section li:last-child {
+    border-bottom: none;
+}
+
+/* ピックアップ作品セクション */
+.discography_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.discography_item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.discography_item img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+.discography_item a:hover img {
+    transform: translateY(-5px);
+}
+
+.discography_item h3 {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.discography_item a {
+    text-decoration: none;
+}
+
+/* フッター */
+.page-footer {
+    background-color: #333;
+    color: #eee;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer_nav li {
+    margin: 0 15px;
+}
+
+.footer_nav a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_nav a:hover {
+    color: #ff9900;
+}
+
+.copyright small {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+/* history.html と artist.html の共通スタイル */
+.page_title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page_title h2 {
+    font-size: 2.5em;
+    color: #ff9900;
+    border-bottom: 3px solid #ff9900;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* history.html スタイル */
+.history_section {
+    padding: 20px 0;
+}
+
+.history_item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.history_item.reverse {
+    flex-direction: row-reverse;
+}
+
+.history_content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.history_item.reverse .history_content {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.history_image {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.history_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history_item h3 {
+    color: #ff9900;
+    border-left: 5px solid #ff9900;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.history_item.reverse h3 {
+    border-left: none;
+    border-right: 5px solid #ff9900;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+
+/* artist.html スタイル */
+.artist_profile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile_item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 45%;
+}
+
+.profile_item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    object-position: center 1px;
+}
+
+.profile_item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+/* music.html スタイル */
+.music_list .music_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.music_list .music_item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.music_list .music_item h3 {
+    color: #ff9900;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.music_info {
+    flex: 1;
+}
